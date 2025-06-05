@@ -15,7 +15,7 @@ async function checkWeather(city) {
     const response = await fetch(`${apiUrl}${city}${apiKey}${metric}`)
     let data = await response.json()
 
-    det.classList.add('.show')
+    det.style.display = "flex";
 
     
     let icon = data.weather[0].main.toLowerCase()
