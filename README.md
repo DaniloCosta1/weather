@@ -2,6 +2,8 @@
 
 🌤️ **WeatherNow** é um app moderno e leve de previsão do tempo feito com puro **HTML**, **CSS** e **JavaScript**. Ideal para quem quer consultar o clima de forma rápida, elegante e sem complicações.
 
+🔗 **Acesse agora**: [danilocosta1.github.io/weather](https://danilocosta1.github.io/weather/)
+
 ---
 
 ## 🚀 Funcionalidades
@@ -16,9 +18,9 @@
 
 ## 🛠️ Tecnologias Utilizadas
 
-- `HTML5` - Estrutura semântica e acessível
-- `CSS3` - Estilização responsiva e animações suaves
-- `JavaScript (Vanilla)` - Lógica e integração com API de clima
+- `HTML5` - Estrutura semântica e acessível  
+- `CSS3` - Estilização responsiva e animações suaves  
+- `JavaScript (Vanilla)` - Lógica e integração com API de clima  
 
 ---
 
@@ -33,4 +35,3 @@ Utilizei a [OpenWeatherMap API](https://openweathermap.org/api) para obter os da
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/weathernow.git
-
