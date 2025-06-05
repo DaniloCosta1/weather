@@ -76,6 +76,7 @@ body{
     margin-top: 10px;
 }
 
+
 .details{
     display: flex;
     align-items: center;
@@ -84,10 +85,21 @@ body{
     margin-top: 50px;
 }
 
+/* .show{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+} */
+
+
 .column{
     display: flex;
     align-items: center;
+    text-align: left;
 }
+
 
 .column img{
     width: 40px;

@@ -7,18 +7,18 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
 const searchBtn = document.querySelector('.search button')
 const searchInput = document.querySelector('.search input')
 
+const det = document.getElementById("det")
+
+
 
 async function checkWeather(city) {
     const response = await fetch(`${apiUrl}${city}${apiKey}${metric}`)
     let data = await response.json()
 
-    console.log(data)
+    det.classList.add('.show')
 
-
-     // let icon = 'teste'
+    
     let icon = data.weather[0].main.toLowerCase()
-    console.log(icon)
-
     switch (icon){
         case 'rain':
             document.querySelector(".weather-icon").src = "./image/rain.png";
@@ -42,6 +42,8 @@ async function checkWeather(city) {
             document.querySelector(".weather-icon").alt = "Sorry";
     }
 
+    
+
     document.querySelector(".city").innerText = data.name;
     document.querySelector(".temp").innerText = Math.round(data.main.temp);
     document.querySelector(".humidity").innerText = `${data.main.humidity}%`;
@@ -52,7 +54,7 @@ async function checkWeather(city) {
 }
 
 searchBtn.addEventListener('click', () => {
-    // let cidade = searchInput.value
+
     checkWeather(searchInput.value)
 })
 
