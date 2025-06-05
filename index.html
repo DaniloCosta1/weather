@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>WEATHER</title>
 </head>
 <body>
     
+    <main class="card">
+
+        <div class="search">
+            <input type="text" placeholder="Digite o nome da cidade">
+            <button><img src="image/search.png" alt=""></button>
+        </div>
+        
+        <div class="weather">
+            <img class="weather-icon" src="" alt="">
+            <h1 class="temp">32c</h1>
+            <h2 class="city">Nova Iguaçu</h2>
+
+            <div class="details">
+
+                <div class="column">
+                    <img src="./image/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Umidade</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <img src="./image/wind.png" alt="">
+                    <div>
+                        <p class="wind">14 km/h</p>
+                        <p>Vel do vento</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
