@@ -45,7 +45,7 @@ async function checkWeather(city) {
     
 
     document.querySelector(".city").innerText = data.name;
-    document.querySelector(".temp").innerText = Math.round(data.main.temp);
+    document.querySelector(".temp").innerText = `${Math.round(data.main.temp)} °C`;
     document.querySelector(".humidity").innerText = `${data.main.humidity}%`;
     document.querySelector(".wind").innerText = `${Math.round(data.wind.speed)}Km/h`;
     document.querySelector(".city").innerText = data.name;
